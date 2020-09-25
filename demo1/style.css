@@ -1,0 +1,10 @@
+ul ul {
+    height: 0;
+    visibility: hidden;
+}
+
+li:hover > ul {
+    height: auto;
+    visibility: visible;
+    color:blue;
+}
