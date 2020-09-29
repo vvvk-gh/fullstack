@@ -1,0 +1,19 @@
+body{
+    margin-right:70px;
+    margin-left: 70px;
+    font-family: serif;
+}
+
+#heading {
+    text-align: center;
+}
+
+#from {
+    text-align: right;
+    line-height: 1.4;
+}
+
+#to {
+    text-align: left;
+    line-height: 1.4;
+}
