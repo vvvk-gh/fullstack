@@ -47,6 +47,59 @@
       </tr>
     </table>
 
+    <br>
+    <h2>
+        Row and column spans
+    </h2>
 
+    <table>
+        <tr>
+          <th colspan="2">Animals</th>
+        </tr>
+        <tr>
+          <th colspan="2">Hippopotamus</th>
+        </tr>
+        <tr>
+          <th rowspan ="2">Horse</th>
+          <td>Mare</td>
+        </tr>
+        <tr>
+          <td>Stallion</td>
+        </tr>
+        <tr>
+          <th colspan="2">Crocodile</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Chicken</th>
+          <td>Hen</td>
+        </tr>
+        <tr>
+          <td>Rooster</td>
+        </tr>
+    </table>
+<br>
+    <h2>Custom Table</h2>
+    <table>
+        <tr> 
+           <!-- row span occupies cells down the table -->
+           <th rowspan="2">r1 cell 1</th>
+           <td> r1 cell 2</td>
+           <td rowspan="3">r1 cell 3 </td>                 
+        </tr>
+
+        <tr>      
+            <!-- as the above row has rowspan2 the r2 cell1 position is changed to r2 cell's poistion -->
+           <th>r2 cell 1 </th>           
+        </tr>
+
+        <tr>     
+            <th colspan="2"> r3  cell 1 </th>
+
+        </tr>
+
+        <tr>     
+            <th colspan="3">r4  cell 1</th>             
+        </tr>
+    </table>
   </body>
 </html>
