@@ -1,0 +1,44 @@
+/* Universal Selectors */
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+/* type selectors */
+
+p {
+    font-family: cursive;
+    font-size: 20pt;
+    color: green;
+    padding:10px;
+}
+
+/* id selectors */
+
+#warning{
+    background-color: orange;
+    color:black;
+    font-size: medium;
+    font-weight: normal;
+}
+
+/* class selectors */
+
+.violet {
+    background-color: violet;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* attribute selectors */
+input[type="text"] {
+    color: green;
+}
+
+input:disabled {
+    width:300px;
+    height: 200px;
+}
