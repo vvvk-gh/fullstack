@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics CSS</title>
+    <!-- external css linking  -->
+    <link rel="stylesheet" href="external.css">
+    
+    <!-- internal css -->
+    <style>
+        /* p is called as selctor */
+        #internal {
+             /* property : value    */
+             color: green;
+             border: 1px solid black;
+             font-style: italic;
+             padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>How to use CSS</h1>
+    <p id="internal"> Internal css</p>
+    <p id="external">External css</p>
+    <p id="Inline" style="background-color: grey; color:white; border: 2px double green; padding: 10px;">Inline css </p>
+
+    <h2>Browser Priority </h2>
+    <blockquote>
+        <p> External CSS < Internal CSS < Inline CSS </p>
+    </blockquote>
+
+</body>
+</html>

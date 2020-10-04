@@ -1,0 +1,25 @@
+#external {
+    background-color: cadetblue;
+    border: 5px dotted yellow;
+    font-style: bold;
+    padding: 10px;
+}
+
+
+
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20pt;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
