@@ -1,0 +1,14 @@
+/* Gernal sibilings */
+/* applies to all the p siblings under h2 */
+
+h2 ~ p {
+    color:red;
+}
+
+/* Adjacent Sibiling */
+/* only to the first child */
+
+h2 + p {
+    font-size: x-large;
+    font-weight: bolder;
+}

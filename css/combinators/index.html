@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Combinators</title>
+</head>
+<body>
+        <h1>Combinators</h1>
+        
+        <div>
+            <P>This sibling wont gets styled , beacause its elder sibling to h2 styles get applied to only younger sibilings
+            (html renders from top to bottom so this wont be consider as sibling to the h2)
+            </P>
+            <h2>Adjacent sibilings</h2>
+            <p>This is a para1 and h2 are adjcent sibilings</p>
+            <p>This is a para2, General sibiling</p>
+            <p>This is a para3, General sibiling</p> 
+            <p>This is a para4 , General sibling</p>
+
+        </div>
+
+        <div>
+            <h2>This is heading 2</h2>
+            <section>
+                <p> Another paragraph this wont get styled as this is not an sibiling of h2 as its inside section tag after h2 tag </p>
+            </section>
+        </div>
+
+</body>
+</html>
