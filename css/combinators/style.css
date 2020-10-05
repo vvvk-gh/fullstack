@@ -1,3 +1,5 @@
+/* sibilings */
+
 /* Gernal sibilings */
 /* applies to all the p siblings under h2 */
 
@@ -12,3 +14,21 @@ h2 + p {
     font-size: x-large;
     font-weight: bolder;
 }
+
+/* Descendant combinator */
+/* Applies to child and Grand child and even for grand grand child*/
+
+section p {
+    background-color: tomato;
+    padding: 10px;
+}
+
+/* Children Combinators*/
+/* child combinator : Direct children  only applies to children of the father*/
+section > p {
+    background-color: yellow;
+    padding: 10px;
+}
+
+
+

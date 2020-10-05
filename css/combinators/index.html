@@ -24,9 +24,22 @@
         <div>
             <h2>This is heading 2</h2>
             <section>
-                <p> Another paragraph this wont get styled as this is not an sibiling of h2 as its inside section tag after h2 tag </p>
+                <p> 
+                    This wont get styled with sibilings Combinators
+                but this can be styled with child combinator </p>
+                <p>Child 2 </p>
             </section>
         </div>
+
+        <section>
+            <article>
+                <aside>
+                    <p>
+                        This will get styled by descendant combinator
+                    </p>
+                </aside>
+            </article>
+        </section>
 
 </body>
 </html>
