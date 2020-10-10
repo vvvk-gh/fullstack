@@ -1,0 +1,14 @@
+#para1{
+    /* font-size: 10px; */
+    font-size: 20pt; /*refrence to typewriters */
+}
+
+#para2{
+    font-size: 2em; 
+    /* em is the default size of the browser so 2 em = 2* browser default size */
+}
+
+#para3{
+    font-size: 5vh;
+    /* vh is the 1/100 of window vertical height size*/
+}
