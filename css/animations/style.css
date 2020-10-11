@@ -1,0 +1,64 @@
+.game {
+    height: 500px;
+    width: 600px;
+    border: dashed 1px black;
+    background-color: beige;
+}
+
+.box{
+    margin: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    display: inline-block;
+    border:1px solid black;
+    text-align: center;
+    font-weight: bolder;
+    padding:5px;
+
+}
+
+
+.enemy {
+    margin-left:100px;
+    background-color:red;
+    animation: bounce 2s infinite;
+}
+
+#e1 {
+    animation-timing-function: ease-in;
+}
+
+#e2{
+    animation-timing-function: ease-out;
+}
+
+.player{
+    background-color: blue;
+    transform:translateY(200px);
+    animation: move 3s infinite ease-in paused;
+}
+
+.game:active .player{
+    animation-play-state: running;
+}
+
+@keyframes bounce {
+    0% {
+
+    }
+    50% {
+        transform: translateY(400px);
+    }
+    100%{
+
+    }
+}
+
+@keyframes move {
+
+    50% {
+        transform : translateY(200px) translateX(500px)
+    }
+
+}
