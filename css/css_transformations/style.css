@@ -1,0 +1,33 @@
+div.box {        
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin:10px;
+    background-color: tomato;
+    border: 3px solid black;
+    text-align: center;
+}
+
+#one:hover {
+    /* transform: skew(30deg); */
+    transform: skewX(-30deg);
+    /*transform: skew(30deg , -60deg); */
+    /* transform: skewY(-30deg); */
+}
+
+#two:hover {
+    transform: scale(2 ,2);
+    /* transform: scaleX(1.5); */
+    /* transform: scaleY(1.5); */
+    /* transform: scaleZ(2); */
+}
+
+
+#three:active{
+    transform: translateX(200px) translateY(100px);
+}
+
+#four:hover{
+    transform: rotate(165deg);
+    transition: 1s;
+}
