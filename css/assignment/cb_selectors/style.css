@@ -1,0 +1,18 @@
+/* only direct child
+li > ul{
+    visibility: hidden;
+    height: 0px;
+} */
+
+/* we have use desendant */
+
+li ul{
+    visibility: hidden;
+    height: 0px;
+}
+
+
+li:hover > ul {
+    visibility: visible;
+    height: auto;
+}
