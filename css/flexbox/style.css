@@ -9,7 +9,7 @@
     align-items: baseline;
     /* align content is for the whole contents , items , boxs(in our case) */
     align-content: stretch;
-    
+
     text-align: center;
     line-height: 40px;
     width: 400px;
@@ -28,4 +28,4 @@
 
 .big{
     height: 50px;
-}
+}   
