@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Static</h1>
+        <p>Default by the document flow</p>
+        <div class="items red"></div>
+        <div class="items blue"></div>
+        <div class="items green"></div>
+        
+    </div>
+
+    <div class="container">
+        <h1>Relative</h1>
+        <ul>
+            <li>Position changes like top , bottom , right , left takes place from the its intial position</li>
+            <li>Doesn't change the document flow (still occupies it's space)</li>
+        </ul>
+        <div class="items red"></div>
+        <div class="items-r blue"></div>
+        <div class="items green"></div>
+        
+    </div>
+
+    <div class="container">
+        <h1>Absoulte</h1>
+        <ul>
+            <li>Position changes like top , bottom , right , left  takes place from its ancestors position</li>
+            <li>changes the document flow(occupied by the following element)</li>
+        </ul>
+        <div class="items red"></div>
+        <div class="items-a blue"></div>
+        <div class="items green"></div>
+        
+    </div>
+    
+</body>
+</html>
