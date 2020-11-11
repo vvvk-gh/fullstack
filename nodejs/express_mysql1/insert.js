@@ -6,25 +6,28 @@ const insert = {
     city : process.argv[4]
 }
 
-
 const connection = mysql.createConnection({
     host : 'localhost',
     user : 'myuser',
-    pass : 'mypass',
+    password : 'mypass',
     database : 'testdb'
 })
 
 connection.query(
-    `INSERT INTO test1 (name , age , city ) VALUES (
+    `INSERT INTO persons (name , age , city ) VALUES (
         '${insert.name}',
         '${insert.age}',
         '${insert.city}'
-    )`,
-    (err , results) => {
-        if(err)
-        console.log(err);
-        else
-        console.log(results);
-        console.log(`values inserted`)
-    } 
-)
+        )`,
+        (err , results) => {
+            if(err) {
+                console.log(err);
+            }
+            
+            else{
+                console.log(results);
+                console.log(`values inserted`)
+            }
+            
+        } 
+        )
