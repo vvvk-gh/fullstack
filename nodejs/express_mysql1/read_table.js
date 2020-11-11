@@ -9,7 +9,7 @@ const connection = mysql.createConnection({
 
 //this wil have 2 params query and the callback function 
 connection.query(
-    `SELECT * FROM test1`,
+    `SELECT * FROM persons`,
     function (err, rows, cols) {
         if(err){
             console.log(err)
