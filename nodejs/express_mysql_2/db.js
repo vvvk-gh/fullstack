@@ -7,18 +7,29 @@ const connection = mysql.createConnection({
   database:'testdb'
 })
 
+ 
+//Get all persons in the persons table
+function getAllPersons(){
+  // Returns a promise object
 
-connection.query(
-    `SELECT * FROM persons`,
+  return new Promise( (resolve , reject) => {
 
-    (err , results) => {
-      if(err){
-        console.log(err);
-        connection.close();
-      }
-      else{
-        console.log(results);
-        connection.close();
-      }
-      
-    })
+    connection.query(
+      `SELECT * FROM persons`,
+  
+      (err , results) => {
+        if(err){
+          reject(err);
+          //connection.close();
+        }
+        else{
+          resolve(results);
+          //connection.close();
+        }
+        
+      })
+  })  
+}
+
+//exports = module.exports = {getAllPersons};
+module.exports = {getAllPersons};
