@@ -31,5 +31,31 @@ function getAllPersons(){
   })  
 }
 
+function add_person(name , age , city){
+  return new Promise((resolve , reject) => {
+    connection.query(
+      `INSERT INTO persons (name , age , city) VALUES(
+        '${name}' , 
+        '${age}' , 
+        '${city}'
+        )`,
+      (err , results)=>{
+        if(err){
+          reject(err)
+        }
+       
+      else{
+        resolve(results);
+      }
+   })
+  })
+}
+
+// add_person()
+// .then((results)=> console.log('Values Addedd'))
+// .catch ((err) => console.log(err))
+
+
+
 //exports = module.exports = {getAllPersons};
-module.exports = {getAllPersons};
+module.exports = {getAllPersons , add_person}
