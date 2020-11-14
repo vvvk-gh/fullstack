@@ -1,4 +1,3 @@
-const { parse } = require('path');
 const Sequelize = require('sequelize');
 const {DataTypes} = require('sequelize');
 
@@ -19,20 +18,4 @@ const Student = db.define('students' , {
     }
 }) 
 
-const task = async() => {
-    try{
-        await db.sync()
-        await Student.create({
-            name : (['varun','abhi','sai','kiran','charan',
-            'shammi','sk','vulgar vardhan','gl','mowa'])[parseInt(Math.random()*10)],
-            age : 10 + (parseInt(Math.random)*10)
-        });
-
-    }
-    catch(err){
-        console.log(err)
-    }
-
-}
-
-task();
+module.exports =  {db , Student}
