@@ -46,7 +46,7 @@ const Posts = db.define('post' , {
     }
 })
 
-const Comments = db.define('comment' , {
+const Comments = db.define('comments' , {
     id : COL_ID_DEF,
     title : COL_TITLE_DEF,
     body :{
