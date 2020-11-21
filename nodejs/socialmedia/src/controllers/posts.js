@@ -23,11 +23,15 @@ module.exports = {
 }
 
 //Test Code
-/* 
+
 async function task(){
-    console.log(await createNewPost('1' , 'This is new post' , 'This the post body'));
+    console.log(await createNewPost('1' , 'new post by user1' , 'This the post body'));
     console.log(`==================================`);
-    console.log(await createNewPost('1' , 'This is some other post' , 'This the someother body'));
+    console.log(await createNewPost('1' , 'other post by user1' , 'This the someother post body'));
+    console.log(`==================================`);
+    console.log(await createNewPost('3' , 'new post by user3' , 'This the post body'));
+    console.log(`==================================`);
+    console.log(await createNewPost('3' , 'other post by user3' , 'This the someother post body'));
     console.log(`==================================`);
     
     const posts = await findAllPosts();
@@ -37,4 +41,4 @@ async function task(){
     
 }
 
-task() */
+task()
