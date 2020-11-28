@@ -64,12 +64,6 @@ Comments.belongsTo(Users)
 Posts.hasMany(Comments)
 Comments.belongsTo(Posts)
 
-//Database syncronization
-db.sync()
-    .then(()=> console.log(`Db synced`))
-    .catch((E)=> console.log(`Error : ${E}`))
-
-
 //exporting modules
   module.exports = {
     db,

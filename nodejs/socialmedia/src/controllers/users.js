@@ -17,7 +17,7 @@ async function getUserByUsername(username){
 }
 
 //Test Code
-async function task(){
+/* async function task(){
 
     console.log(await createAnnoUser());
     console.log(`----------------------`);
@@ -29,7 +29,7 @@ async function task(){
 
 }
 task(); 
-
+ */
 module.exports = {
 createAnnoUser,
 getUserById,
