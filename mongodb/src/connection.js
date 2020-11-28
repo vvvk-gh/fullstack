@@ -15,5 +15,3 @@ const dbName = 'todoDb';
 
     console.log(todoDb);
 })()
-
-

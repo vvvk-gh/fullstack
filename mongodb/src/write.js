@@ -11,7 +11,6 @@ const todoDb = client.db(DB_NAME)
 // creating a collection (table) in the database
 const todos = todoDb.collection('todos');
 
-
 // adding data/tasks into the table
 const result = await todos.insertMany([
     {task: 'a task for anyone', priority: 4},   
