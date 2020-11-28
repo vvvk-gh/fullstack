@@ -30,6 +30,6 @@ Course.bulkCreate([
     ignoreDuplicates : true
 });
 
-db.sync()
+db.sync({alter : true})
 .then(() => console.log('Values added into the database'))
 .catch((err) => console.log(err) )
