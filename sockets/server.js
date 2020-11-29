@@ -13,6 +13,9 @@ io.on('connection' , (socket)=>{
         console.log('client with : '+socket.id+ '  boomed');
     })
 
+    setInterval(() => {
+        socket.emit('whizz')
+    }, 2000);
 })
 
 
