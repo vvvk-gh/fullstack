@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="conditions">
+        <button v-on:click = 'counter'>Counter</button>
+        <!-- Alternative for v-on -->
+        <!-- <button @click = 'counter'>Counter</button> -->
+        {{ count }}
+        <span v-if ='isEven'>Even</span>
+        <span v-else>Odd</span>
+    </div>
+    <script>
+        var app = new Vue({
+            'el' : '#conditions',
+            'data' : {
+                'count' : 0,
+                'isEven' : true,
+            },
+            'methods':{
+                counter : function(){
+                    this.count ++;
+                    this.isEven = this.count % 2 === 0 ? true : false
+                }
+            }
+        })
+    </script>
+</body>
+</html>
